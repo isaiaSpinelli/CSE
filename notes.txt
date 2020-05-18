@@ -1,0 +1,54 @@
+2020-02-13-raspbian-buster-lite : erreur lors du lancement du pyhton
+2020-02-13-raspbian-buster-full : 
+
+
+
+1. modifer /boot/cmdline.txt :
+
+console=serial0,115200 console=tty1 -> console=serial0,115200 console=ttyAMA0
+
+default desktop (console=serial0,115200 console=tty1 root=PARTUUID=97709164-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet init=/usr/lib/raspi-config/init_resize.sh splash plymouth.ignore-serial-consoles)
+
+2. Ajotuer dans /boot/config.txt :
+
+dtoverlay=pi3-miniuart-bt
+core_freq=250
+dtparam=uart0=on
+
+3. démarrer avec uart
+
+4. login : pi
+password : raspberry
+
+5. branchez un cable ethernet
+
+6. raspi-config (enable camera -> reboot)
+
+7. prendre une photo : raspistill -o cam.jpg
+
+
+8. régler le focus (tourner l'objectif)
+
+
+8. sudo apt-get install terminology (afficher une image) / sudo apt-get install w3m / w3m-img
+sudo apt-get -y install fbi
+sudo apt-get install links2
+
+sudo apt-get install gimp
+gimp cam.jpg
+
+
+9. copier des images sur la pi :
+scp Bureau/image_de_test/image_*  pi@192.168.1.41:/home/pi/images_test
+
+
+
+
+
+xvfb-run python test2.py
+vs
+
+ssh -Y pi@192.168.1.41
+python test.py
+
+gcc -Wall main2.c -o main2

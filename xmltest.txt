@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<sachet>
+
+    <personne>
+        <nom>Le Gaulois</nom>
+        <prenom>Asterix</prenom>
+    </personne>
+	
+    <adresse>
+		<ville>Commander Clement</ville>
+        <npa>1930</npa>
+        <rue>Maison du bonheur</npa>
+        <numero>Gunther</numero>
+    </adresse>
+	
+	<time>
+		<heure>
+			<heure>18</heure>
+			<minute>00</minute>
+		</heure>
+	
+		<date>
+			<jourstr>Lundi</jourstr>
+			<jour>15</jour>
+			<mois>01</mois>
+			<annee>2018</annee>
+		</date>
+    </time>
+	
+	<total>2</total>
+	
+	<medocs>
+		<medoc>
+			<quantite>1</quantite>
+			<nom>Smint mint weiss</nom>
+			<description>bonbon triangle blanc1 s</description>
+		</medoc>
+	
+		<medoc>
+			<quantite>1</quantite>
+			<nom>Tic Tac peach lemon orange</nom>
+			<description>bonbon obiong orange3</description>
+		</medoc>
+    </medocs>
+	
+</sachet>
