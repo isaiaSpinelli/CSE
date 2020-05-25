@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE sachet[
+<!ELEMENT sachet (personne?,adresse?,time,total?,medocs*)>
+	<!ELEMENT time (heure_minute,date)>
+		<!ELEMENT heure_minute (heure,minute)>
+			<!ELEMENT heure (#PCDATA)>
+			<!ELEMENT minute (#PCDATA)>
+
+		<!ELEMENT date (jourstr,jour,mois,annee)>
+			<!ELEMENT jourstr (#PCDATA)>
+			<!ELEMENT jour (#PCDATA)>
+			<!ELEMENT mois (#PCDATA)>
+			<!ELEMENT annee (#PCDATA)>
+
+	<!ELEMENT adresse (ville,npa,rue,numero)>
+		<!ELEMENT ville (#PCDATA)>
+		<!ELEMENT npa (#PCDATA)>
+		<!ELEMENT rue (#PCDATA)>
+		<!ELEMENT numero (#PCDATA)>
+
+	<!ELEMENT personne (nom,prenom)>
+		<!ELEMENT nom (#PCDATA)>
+		<!ELEMENT prenom (#PCDATA)>
+
+	<!ELEMENT total (#PCDATA)>
+	<!ELEMENT medocs (medoc+)>
+		<!ELEMENT medoc (quantite,nom_medoc,description?)>
+			<!ELEMENT quantite (#PCDATA)>
+			<!ELEMENT nom_medoc (#PCDATA)>
+			<!ELEMENT description (#PCDATA)>
+]>
+<sachet>
+
+    <personne>
+        <nom>Le Gaulois</nom>
+        <prenom>Asterix</prenom>
+    </personne>
+	
+    <adresse>
+		<ville>Commander Clement</ville>
+        <npa>1930</npa>
+        <rue>Maison du bonheur</rue>
+        <numero>Gunther</numero>
+    </adresse>
+	
+	<time>
+		<heure_minute>
+			<heure>18</heure>
+			<minute>00</minute>
+		</heure_minute>
+	
+		<date>
+			<jourstr>Lundi</jourstr>
+			<jour>15</jour>
+			<mois>01</mois>
+			<annee>2018</annee>
+		</date>
+    </time>
+	
+	<total>2</total>
+	
+	<medocs>
+		<medoc>
+			<quantite>1</quantite>
+			<nom_medoc>Smint mint weiss</nom_medoc>
+			<description>bonbon triangle blanc1 s</description>
+		</medoc>
+	
+		<medoc>
+			<quantite>1</quantite>
+			<nom_medoc>Tic Tac peach lemon orange</nom_medoc>
+			<description>bonbon obiong orange3</description>
+		</medoc>
+    </medocs>
+	
+</sachet>
