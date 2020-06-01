@@ -1,26 +1,25 @@
 <?xml version="1.0"?>
 <sachet>
-
     <personne>
         <nom>Le Gaulois</nom>
         <prenom>Asterix</prenom>
     </personne>
 	
     <adresse>
-		<ville>Commander Clement</ville>
+		<ville></ville>
         <npa>1930</npa>
-        <rue>Maison du bonheur</npa>
-        <numero>Gunther</numero>
+        <rue>Maison du bonheur</rue>
+        <numero></numero>
     </adresse>
 	
 	<time>
-		<heure>
+		<heure_minute>
 			<heure>18</heure>
 			<minute>00</minute>
-		</heure>
+		</heure_minute>
 	
 		<date>
-			<jourstr>Lundi</jourstr>
+			<jourstr>Luu</jourstr>
 			<jour>15</jour>
 			<mois>01</mois>
 			<annee>2018</annee>
@@ -32,13 +31,13 @@
 	<medocs>
 		<medoc>
 			<quantite>1</quantite>
-			<nom>Smint mint weiss</nom>
+			<nom_medoc>Smint mint weiss</nom_medoc>
 			<description>bonbon triangle blanc1 s</description>
 		</medoc>
 	
 		<medoc>
 			<quantite>1</quantite>
-			<nom>Tic Tac peach lemon orange</nom>
+			<nom_medoc>Tic Tac peach lemon orange</nom_medoc>
 			<description>bonbon obiong orange3</description>
 		</medoc>
     </medocs>
