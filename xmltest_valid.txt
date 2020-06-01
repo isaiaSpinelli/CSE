@@ -29,6 +29,8 @@
 			<!ELEMENT nom_medoc (#PCDATA)>
 			<!ELEMENT description (#PCDATA)>
 ]>
+
+// heure_minute - nom_medoc
 <sachet>
 
     <personne>
